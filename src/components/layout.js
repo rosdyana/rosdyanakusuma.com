@@ -4,8 +4,12 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import { blue } from "@mui/material/colors";
 
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 
 const Layout = (props) => {
     const { children } = props;
@@ -33,7 +37,11 @@ const Layout = (props) => {
                         <html lang="en" />
                     </Helmet>
                     <Container maxWidth="md" display="flex" flexDirection="column">
-                        <Navigation siteTitle={data.site.siteMetadata.title} />
+                        <AppBar position="static">
+                            <Toolbar>
+                                <Avatar sx={{ bgcolor: blue[200] }}>RK</Avatar>
+                            </Toolbar>
+                        </AppBar>
                         <Box component="main">{children}</Box>
                     </Container>
                 </>
