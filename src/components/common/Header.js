@@ -59,11 +59,9 @@ function Header() {
                 </Grid>
 
                 <Grid item>
-                  <div>
                     <Typography className={headerClasses.headerTitle} variant="h3">
                         Rosdyana Kusuma
                     </Typography>
-                    </div>
                 </Grid>
             </Grid>
         </Grow>

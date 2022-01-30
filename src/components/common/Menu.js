@@ -4,7 +4,6 @@ import { useEffect } from "react";
 //mui components
 import List from "@mui/material/List";
 import Grid from "@mui/material/Grid";
-import { Typography } from "@mui/material";
 import Slide from "@mui/material/Slide";
 import Button from "@mui/material/Button";
 
@@ -75,7 +74,7 @@ function Menu() {
                                         ...commonBorderColor,
                                     }}
                                     size="large"
-                                    startIcon={<GitHubIcon />}
+                                    startIcon={<LinkedInIcon />}
                                 >
                                     LinkedIn
                                 </Button>
