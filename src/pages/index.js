@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Helmet from "react-helmet";
 
 //mui components
 import { ThemeProvider } from "@mui/material/styles";
@@ -15,6 +16,15 @@ import theme from "../assets/css/theme";
 const IndexPage = () => {
     return (
         <div className="App">
+            <Helmet
+                title="Rosdyana Kusuma"
+                meta={[
+                    { name: "description", content: "Rosdyana Kusuma" },
+                    { name: "keywords", content: "rosdyana, rosdyana kusuma, linkedin, twitter, github, resume" },
+                ]}
+            >
+                <html lang="en" />
+            </Helmet>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
 
